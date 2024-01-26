@@ -1,7 +1,9 @@
 const todoModel = require("../models/todo");
 
 const listToDoService = async () => {
-  const result = await todoModel.findAll();
+  const result = await todoModel.findAll({
+    order: [["createdAt", "DESC"]],
+  });
 
   return result;
 };
