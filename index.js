@@ -17,7 +17,6 @@ app.use(router);
 app.listen(port, async () => {
   try {
     await sequelize.authenticate();
-    // await sequelize.sync({ force: true });
     console.log("success");
   } catch (err) {
     console.log(err);

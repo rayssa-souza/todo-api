@@ -6,10 +6,6 @@ const Todo = sequelize.define("Todo", {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  //   date: {
-  //     type: DataTypes.DATE,
-  //     allowNull: false,
-  //   },
   completed: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
